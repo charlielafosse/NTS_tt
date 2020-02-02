@@ -4,6 +4,7 @@
   "description": "NTS tech test",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "parcel src/index.html"
   },

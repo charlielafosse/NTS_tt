@@ -1,17 +1,27 @@
 import styled from "styled-components";
 
-export const HeaderStyle = styled.h1`
-  color: whitesmoke;
-  /* justify-self: center; */
-  /* margin: 0 auto; */
+export const HeaderText = styled.h1`
+  /* color: whitesmoke;
+  margin-right: 2%;
+  &:hover {
+    opacity: 0.2;
+  }
+  font-size: 1.2rem;
+  transition: opacity 0.3s; */
 `;
 
 export const Logo = styled.img`
-  height: 100%;
-  margin-top: 1%;
+  height: 120%;
+  margin-top: 2%;
+  margin-left: 2%;
+  &:hover {
+    opacity: 0.2;
+  }
+  transition: opacity 0.3s;
 `;
 
 export const HeaderContainer = styled.section`
-  width: 100%;
+  width: 100vw;
   display: flex;
+  justify-content: space-between;
 `;

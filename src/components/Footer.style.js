@@ -6,7 +6,6 @@ export const FooterStyle = styled.h1`
 `;
 
 export const FooterContainer = styled.section`
-  width: 100%;
   display: flex;
   justify-content: center;
 `;

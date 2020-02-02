@@ -1,15 +1,11 @@
 import React from "react";
-import { ButtonContainer, ButtonStyle } from "./Button.style";
+import { ButtonStyle } from "./Button.style";
 
-const Button = ({ modalOpacity, setmodalOpacity }) => (
-  //   <ButtonContainer>
+const Button = ({ modalVisibility, setModalVisibility }) => (
   <ButtonStyle
-    opacity={modalOpacity}
-    onClick={() => setmodalOpacity(modalOpacity === 0.9 ? 0 : 0.9)}
-  >
-    {modalOpacity}
-  </ButtonStyle>
-  //   </ButtonContainer>
+    modalVisibility={modalVisibility}
+    onClick={() => setModalVisibility(0.9)}
+  ></ButtonStyle>
 );
 
 export default Button;
