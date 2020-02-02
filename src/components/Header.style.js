@@ -12,7 +12,7 @@ export const HeaderText = styled.h1`
 
 export const Logo = styled.img`
   height: 120%;
-  margin-top: 2%;
+  margin-top: 3%;
   margin-left: 2%;
   &:hover {
     opacity: 0.2;

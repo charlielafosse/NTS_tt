@@ -22,17 +22,23 @@ export const ModalContainer = styled.section`
   justify-content: center;
   justify-self: center;
   align-items: center;
+  width: 100%;
 `;
 
 export const PostcardContainer = styled.section`
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 300px;
-  height: 200px;
+  width: 450px;
+  height: 300px;
   position: absolute;
   background: url("https://i.pinimg.com/originals/d2/1f/6e/d21f6ebf19ac377165a619b34853406d.jpg");
   background-repeat: no-repeat;
-  background-size: 300px;
+  background-size: 450px;
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 200px;
+    background-size: 300px;
+  }
   border-radius: 2px;
   z-index: ${props => (props.modalVisibility ? 1 : 0)};
   opacity: ${props => (props.modalVisibility ? 1 : 0)};
@@ -46,7 +52,10 @@ export const PostcardImage = styled.img`
 `;
 
 export const Text = styled.p`
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
   margin: 0 auto;
   letter-spacing: 0.15em;
   position: absolute;
@@ -66,22 +75,31 @@ export const Form = styled.form`
 
 export const ExitButton = styled.button`
   align-self: flex-end;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   border: none;
   background-color: white;
-  margin-top: 22px;
-  margin-right: 11px;
+  margin-top: 29px;
+  margin-right: 18px;
+  margin-bottom: 10px;
   cursor: pointer;
   &:hover {
     color: red;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    margin-top: 22px;
+    margin-right: 11px;
   }
 `;
 
 export const ContactSpan = styled.span`
   font-size: 0.6rem;
-  margin-left: 10px;
+  margin-left: 16px;
   color: black;
   padding-right: 5px;
+  @media (max-width: 768px) {
+    margin-left: 10px;
+  }
 `;
 
 export const Label = styled.label`
@@ -94,30 +112,34 @@ export const InputField = styled.input`
     color: ${props => (props.disabled ? "black" : "grey")};
     opacity: 1;
   }
-  font-size: 0.6rem;
-  padding: 2%;
+  font-size: 0.8rem;
+  padding-left: 4%;
   width: 80%;
   margin-right: 10px;
   font-weight: 200;
   border: 0;
   background-color: transparent;
-  align-self: flex-start;
   border-bottom: solid 0.05rem grey;
+  @media (max-width: 768px) {
+    font-size: 0.6rem;
+    padding: 2%;
+  }
 `;
 
 export const SubmitButton = styled.button`
   cursor: pointer;
   font-family: "Cedarville Cursive", cursive;
   border-radius: 10%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border: none;
   background-color: transparent;
   width: 40%;
-  padding-bottom: 28px;
-  height: 10%;
   color: lightsteelblue;
   align-self: flex-end;
   &:hover {
     color: darkblue;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
   }
 `;
