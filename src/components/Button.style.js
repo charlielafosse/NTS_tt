@@ -5,11 +5,10 @@ export const ButtonStyle = styled.button`
   background-size: 280px;
   opacity: ${props => (props.modalVisibility ? 0 : 1)};
   z-index: ${props => (props.modalVisibility ? 0 : 1)};
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-in-out;
   background-repeat: no-repeat;
   color: white;
-  border: 1px solid grey;
-  border-radius: 5%;
+  border-radius: 2%;
   width: 280px;
   min-width: 280px;
   height: 150px;
