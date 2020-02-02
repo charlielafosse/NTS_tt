@@ -75,11 +75,11 @@ export const Form = styled.form`
 
 export const ExitButton = styled.button`
   align-self: flex-end;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   border: none;
   background-color: white;
   margin-top: 29px;
-  margin-right: 18px;
+  margin-right: 19px;
   margin-bottom: 10px;
   cursor: pointer;
   &:hover {

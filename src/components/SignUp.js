@@ -10,7 +10,6 @@ import {
   PostcardImage,
   PostcardContainer,
   Form,
-  SendTo,
   Text
 } from "./SignUp.style";
 

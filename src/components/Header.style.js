@@ -22,6 +22,6 @@ export const Logo = styled.img`
 
 export const HeaderContainer = styled.section`
   width: 100vw;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
 `;
